@@ -1,14 +1,18 @@
 # RtmpClient for Windows Runtime
 
-[![NuGet](https://img.shields.io/nuget/v/RtmpClient.svg?style=flat-square)](https://www.nuget.org/packages/RtmpClient/) [![Downloads](https://img.shields.io/nuget/dt/RtmpClient.svg?style=flat-square)](https://www.nuget.org/packages/https://img.shields.io/nuget/v/RtmpClient.svg?style=flat-square/) [![License](https://img.shields.io/github/license/mntone/RtmpClient.svg?style=flat-square)](https://github.com/mntone/RtmpClient/blob/master/license.md)
+[![NuGet](https://img.shields.io/nuget/v/RtmpClient.UWP.svg?style=flat-square)](https://www.nuget.org/packages/RtmpClient.UWP/) 
+[![License](https://img.shields.io/github/license/tor4kichi/RtmpClient.svg?style=flat-square)](https://github.com/tor4kichi/RtmpClient/blob/master/license.md)
 
 This client treats rtmp streaming, just like Adobe Flash Player. Now, only rtmp is available.
+
+(this is modified to uap10.0 build from origianl RtmpClient.)
 
 ## Environment
 You can use:
 
-- Windows (8.1),
-- Windows Phone (8.1).
+- ~~Windows (8.1),~~
+- ~~Windows Phone (8.1).~~
+- UWP
 
 ## License
 This component and demoapp is “2-clause BSD license.”
@@ -30,3 +34,4 @@ Thus, this component sometimes changes API endpoints.
 
 ## Related projects
 - [Action Message Format for Windows Runtime](//github.com/mntone/Data.Amf)
+- [Action Message Format for UWP](//github.com/tor4kichi/Data.Amf)
