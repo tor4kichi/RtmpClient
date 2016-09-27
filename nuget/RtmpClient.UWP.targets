@@ -1,0 +1,21 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Target Name="CheckAnyCPU" Condition="'$(Platform)' != 'x64' AND '$(Platform)' != 'x86' AND '$(Platform)' != 'ARM'" BeforeTargets="BeforeBuild">
+		<Error Text="RtmpClient for Windows Runtime does not support the $(Platform) target platform." />
+	</Target>
+
+	<Target Name="Checkx64" Condition="'$(Platform)|$(PlatformToolset)'=='x64|v120_wp81'" BeforeTargets="BeforeBuild">
+		<Error Text="RtmpClient for Windows Runtime does not support the $(Platform) target platform on Windows Phone 8.1." />
+	</Target>
+
+  <PropertyGroup>
+    <Current-Platform Condition="'$(Platform)' == 'Win32'">x86</Current-Platform>
+    <Current-Platform Condition="'$(Platform)' != 'Win32'">$(Platform)</Current-Platform>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetPlatformIdentifier)' == 'UAP'">
+    <Reference Include="$(MSBuildThisFileDirectory)..\..\lib\uap10.0\Mntone.Rtmp.winmd">
+      <Implementation>Mntone.Rtmp.dll</Implementation>
+    </Reference>
+    <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\runtimes\win10-$(Current-Platform)\native\Mntone.Rtmp.dll" />
+  </ItemGroup>
+</Project>
