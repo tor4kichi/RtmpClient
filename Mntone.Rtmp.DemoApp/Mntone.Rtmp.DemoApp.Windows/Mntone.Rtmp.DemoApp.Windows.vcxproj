@@ -60,7 +60,6 @@
     <OutDir>$(SolutionDir)bin\$(Platform)-$(Configuration)\$(MSBuildProjectName)\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Platform)-$(Configuration)\$(MSBuildProjectName)\</IntDir>
     <TargetName>Mntone.Rtmp.DemoApp</TargetName>
-    <NuGetPackageImportStamp>caca800e</NuGetPackageImportStamp>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
@@ -119,7 +118,6 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="Mntone.Rtmp.DemoApp.Windows_TemporaryKey.pfx" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\Logo.scale-100.png" />
@@ -138,13 +136,5 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\..\packages\ActionMessageFormat.0.9.6.2\build\native\ActionMessageFormat.targets" Condition="Exists('..\..\packages\ActionMessageFormat.0.9.6.2\build\native\ActionMessageFormat.targets')" />
-  </ImportGroup>
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>このプロジェクトは、このコンピューターにはない NuGet パッケージを参照しています。これらをダウンロードするには、NuGet パッケージの復元を有効にしてください。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。不足しているファイルは {0} です。</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\ActionMessageFormat.0.9.6.2\build\native\ActionMessageFormat.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\ActionMessageFormat.0.9.6.2\build\native\ActionMessageFormat.targets'))" />
-  </Target>
+  <ImportGroup Label="ExtensionTargets" />
 </Project>

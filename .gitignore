@@ -9,3 +9,14 @@ Generated Files
 *.sdf
 *.suo
 *.vcxproj.user
+Mntone.Rtmp/Mntone.Rtmp.UWP/Release/
+Mntone.Rtmp/Mntone.Rtmp.UWP/x64/Release/
+Mntone.Rtmp/Mntone.Rtmp.UWP/Debug/
+Win32/
+Mntone.Rtmp/Mntone.Rtmp.UWP/ARM/
+x64/
+Mntone.Rtmp.VC.db
+Mntone.Rtmp.VC.VC.opendb
+ARM/Release/Mntone.Rtmp.UWP/Mntone.Rtmp.winmd
+ARM/
+.vs/
