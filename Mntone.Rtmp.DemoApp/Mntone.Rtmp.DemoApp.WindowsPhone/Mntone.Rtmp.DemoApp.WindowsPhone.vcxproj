@@ -118,11 +118,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Mntone.Rtmp\Mntone.Rtmp.WindowsPhone\Mntone.Rtmp.WindowsPhone.vcxproj">
-      <Project>{77359faa-4ef8-449c-8068-5671bab8ead6}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

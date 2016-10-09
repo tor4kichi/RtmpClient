@@ -130,11 +130,6 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Mntone.Rtmp\Mntone.Rtmp.Windows\Mntone.Rtmp.Windows.vcxproj">
-      <Project>{cc1de3d0-6318-4958-9dd7-4322df65d25f}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
 </Project>

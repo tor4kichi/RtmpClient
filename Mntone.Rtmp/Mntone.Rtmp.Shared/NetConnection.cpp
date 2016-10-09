@@ -34,6 +34,11 @@ NetConnection::~NetConnection()
 	CloseImpl();
 }
 
+void NetConnection::Close()
+{
+	CloseImpl();
+}
+
 void NetConnection::CloseImpl()
 {
 	connection_->ReadOperationChanged -= readOperationEventToken_;

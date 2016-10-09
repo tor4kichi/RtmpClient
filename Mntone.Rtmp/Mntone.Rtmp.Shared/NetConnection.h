@@ -22,6 +22,8 @@ namespace Mntone { namespace Rtmp {
 	public:
 		NetConnection();
 
+		void Close();
+
 		// Connect
 		[Windows::Foundation::Metadata::Overload( "ConnectWithDefaultUriAsync" )]
 		Windows::Foundation::IAsyncAction^ ConnectAsync( Windows::Foundation::Uri^ uri );

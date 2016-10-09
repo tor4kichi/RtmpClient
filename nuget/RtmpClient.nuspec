@@ -1,35 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
-  <metadata minClientVersion="2.5">
-    <id>RtmpClient.UWP</id>
-    <version>1.0.0</version>
-    <title>RtmpClient for UWP</title>
-    <authors>tor4kichi</authors>
-    <owners>mntone tor4kichi</owners>
-    <licenseUrl>https://github.com/tor4kichi/RtmpClient/blob/master/license.md</licenseUrl>
-    <projectUrl>https://github.com/tor4kichi/RtmpClient</projectUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>RtmpClient for UWP can communicate with rtmp server.</description>
-    <summary>This component is rtmp streaming available. Rtmp is used in media streaming and message communication.</summary>
-    <releaseNotes>uap10.0 build first release.</releaseNotes>
-    <copyright>Copyright (c) 2013-2015, mntone. All rights reserved.</copyright>
-    <language>en-US</language>
-    <tags>UWP uap10.0 mntone Rtmp Flash Adobe Video Audio</tags>
-    <dependencies>
-      <dependency id="ActionMessageFormat.UWP" />
-    </dependencies>
-  </metadata>
-  <files>
-    <file src="..\Win32\Debug\Mntone.Rtmp.UWP\Mntone.Rtmp.winmd" target="lib\uap10.0" />
-    <file src="..\Win32\Debug\Mntone.Rtmp.UWP\Mntone.Rtmp.xml" target="lib\uap10.0" />
-
-    <file src="..\ARM\Release\Mntone.Rtmp.UWP\Mntone.Rtmp.dll" target="runtimes\win10-arm\native" />
-    <file src="..\ARM\Release\Mntone.Rtmp.UWP\Mntone.Rtmp.pri" target="runtimes\win10-arm\native" />
-    <file src="..\x64\Release\Mntone.Rtmp.UWP\Mntone.Rtmp.dll" target="runtimes\win10-x64\native" />
-    <file src="..\x64\Release\Mntone.Rtmp.UWP\Mntone.Rtmp.pri" target="runtimes\win10-x64\native" />
-    <file src="..\Win32\Release\Mntone.Rtmp.UWP\Mntone.Rtmp.dll" target="runtimes\win10-x86\native" />
-    <file src="..\Win32\Release\Mntone.Rtmp.UWP\Mntone.Rtmp.pri" target="runtimes\win10-x86\native" />
-
-    <file src="RtmpClient.UWP.targets" target="build\native" />
-  </files>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>RtmpClient.UWP</id>
+        <version>1.1.0</version>
+        <title>RtmpClient for UWP</title>
+        <authors>tor4kichi</authors>
+        <owners>mntone tor4kichi</owners>
+        <licenseUrl>https://github.com/tor4kichi/RtmpClient/blob/master/license.md</licenseUrl>
+        <projectUrl>https://github.com/tor4kichi/RtmpClient</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>RtmpClient for UWP can communicate with rtmp server.</description>
+        <summary>This component is rtmp streaming available. Rtmp is used in media streaming and message communication.</summary>
+        <releaseNotes>+ Close method in NetConnection</releaseNotes>
+        <copyright>Copyright (c) 2013-2015, mntone. All rights reserved.</copyright>
+        <language>en-US</language>
+        <tags>UWP uap10.0 mntone Rtmp Flash Adobe Video Audio</tags>
+        <dependencies>
+            <dependency id="ActionMessageFormat.UWP" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="RtmpClient.UWP.targets" target="build\native\RtmpClient.UWP.targets" />
+        <file src="..\Win32\Debug\Mntone.Rtmp.UWP\Mntone.Rtmp.winmd" target="lib\uap10.0\Mntone.Rtmp.winmd" />
+        <file src="..\Win32\Debug\Mntone.Rtmp.UWP\Mntone.Rtmp.xml" target="lib\uap10.0\Mntone.Rtmp.xml" />
+        <file src="..\ARM\Release\Mntone.Rtmp.UWP\Mntone.Rtmp.dll" target="runtimes\win10-arm\native\Mntone.Rtmp.dll" />
+        <file src="..\ARM\Release\Mntone.Rtmp.UWP\Mntone.Rtmp.pri" target="runtimes\win10-arm\native\Mntone.Rtmp.pri" />
+        <file src="..\x64\Release\Mntone.Rtmp.UWP\Mntone.Rtmp.dll" target="runtimes\win10-x64\native\Mntone.Rtmp.dll" />
+        <file src="..\x64\Release\Mntone.Rtmp.UWP\Mntone.Rtmp.pri" target="runtimes\win10-x64\native\Mntone.Rtmp.pri" />
+        <file src="..\Win32\Release\Mntone.Rtmp.UWP\Mntone.Rtmp.dll" target="runtimes\win10-x86\native\Mntone.Rtmp.dll" />
+        <file src="..\Win32\Release\Mntone.Rtmp.UWP\Mntone.Rtmp.pri" target="runtimes\win10-x86\native\Mntone.Rtmp.pri" />
+    </files>
 </package>
